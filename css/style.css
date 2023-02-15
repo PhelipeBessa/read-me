@@ -1,0 +1,200 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@100;300;400;700&display=swap');
+:root{
+    --left-menu: #040b15;
+    --back: #f4f4f4;
+    --buttons: #212532;
+    --links: #606c7c;
+    --links-hover: #41A5E1;
+}
+
+body{
+    background: var(--back);
+    margin: 0;
+    font-family: 'Roboto Mono', monospace;
+}
+.content{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    box-sizing: border-box;
+}
+.left-menu{
+    background: var(--left-menu);
+    width: 30vw;
+    height: 100vh;
+}
+.perfil{
+    text-align: center;
+}
+.perfil-img{
+    width: 10vw;
+    margin: 30px 9.5vw;
+    border: 8px solid var(--buttons);
+    border-radius: 50%;
+    margin-bottom: 0;
+}
+.name{
+    font-size: 24px;
+    /* margin-top: -100px; */
+}
+.name a{
+    text-decoration: none;
+    color: var(--back);
+    font-weight: 600;
+}
+.social-media{
+    margin: 20px 5vw 50px 5vw;
+}
+.social-media a{
+    border-radius: 50%;
+    background: var(--links);
+    border: 10px solid var(--links);
+}
+.mail:hover{
+    background: var(--links-hover);
+    border: 10px solid var(--links-hover);
+}
+.github:hover{
+    background: var(--links-hover);
+    border: 10px solid var(--links-hover);
+}
+.instagram:hover{
+    background: var(--links-hover);
+    border: 10px solid var(--links-hover);
+}.linkedin:hover{
+    background: var(--links-hover);
+    border: 10px solid var(--links-hover);
+}.telegram:hover{
+    background: var(--links-hover);
+    border: 10px solid var(--links-hover);
+}.whatsapp:hover{
+    background: var(--links-hover);
+    border: 10px solid var(--links-hover);
+}
+.menu{
+    font-size: 14px;
+}
+.menu a{
+    text-decoration: none;
+}
+li{
+    list-style: none;
+    color: var(--back);
+    margin-bottom: 10px;
+}
+li:hover{
+    color: var(--links-hover);
+}
+.menu img{
+    width: 22px;
+}
+.menu-mobile{
+    display: none;
+}
+.baseboard{
+    position: absolute;
+    bottom: 0;
+    margin: 5px auto;
+    width: 30vw;
+    text-align: center;
+    font-size: 12px;
+}
+.baseboard span{
+    color: var(--back);
+}
+.baseboard a{
+    color: var(--links-hover);
+    text-decoration: none;
+}
+.tips-projects{
+    width: 70vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+}
+.tips-projects img{
+    width: 46vw;
+}
+
+
+/* Large Screen */
+@media only screen and (max-width: 1200px){
+
+}
+/* Notebook */
+@media only screen and (max-width: 992px){
+
+}
+/* Tablet */
+@media only screen and (max-width: 768px){
+
+}
+/* Mobile */
+@media only screen and (max-width: 600px){
+    .content{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .left-menu{
+        width: 100vw;
+        height: 12vh;
+    }
+    .perfil-img{
+        position: absolute;
+        left: 0;
+        margin: 10px;
+        width: 20vw;
+        border: 3px solid var(--buttons);
+    }
+    .name{
+        display: none;
+    }
+    .social-media{
+        display: none;
+    }
+    .menu{
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        display: flex;
+        flex-wrap: wrap;
+        /* position: absolute; */
+    }
+    #menu{
+        display: none;
+    }
+    .menu-mobile{
+        display: block;
+    }
+    .menu-list img{
+        display: flex;
+        width: 40px;
+        position: absolute;
+        right: 0;
+        margin: 15px 15px 0 0;
+    }
+    /*
+    .menu-x, .menu-list-open{
+         display: none; 
+    }
+    .menu-list-open img{
+        display: flex;
+        width: 40px;
+        position: absolute;
+        /* right: 0;
+        margin: 15px 15px 0 0; 
+    }*/
+    
+    li{
+        display: inline;
+        list-style: none;
+        cursor: pointer;
+    }
+    .baseboard{
+        display: none;
+    }
+    .tips-projects{
+        width: 100vw;
+        height: 85vh;
+    }
+}

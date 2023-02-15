@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Phelipe Bessa</title>
+</head>
+<body>
+    <div class="content" id="content">
+        <div id="leftMenu" class="left-menu">
+            <div class="perfil">
+                <img src="img/phelipe.png" alt="" class="perfil-img">
+                <span class="name"><a href="">Phelipe Bessa</a></span>
+            </div>
+            <div class="social-media">
+                <a href="mailto:phelipe.diogoti@gmail.com" target="_blank" class="mail"><img src="img/envelope-fill.svg" alt=""></a>
+                <a href="https://github.com/Bessa95" target="_blank" class="github"><img src="img/github.svg" alt=""></a>
+                <a href="https://www.instagram.com/phelipedev/" target="_blank" class="instagram"><img src="img/instagram.svg" alt=""></a>
+                <a href="https://www.linkedin.com/in/phelipe-bessa-7b364530/" target="_blank" class="linkedin"><img src="img/linkedin.svg" alt=""></a>
+                <a href="https://t.me/Phelipe95" target="_blank" class="telegram"><img src="img/telegram.svg" alt=""></a>
+                <a href="https://wa.me/5585996306479?text=Ola%20Phelipe" target="_blank" class="whatsapp"><img src="img/whatsapp.svg" alt=""></a>
+            </div>
+            
+            <div class="menu">
+                <ul>
+                    <div class="menu-mobile" id="menu-mobile">
+                        <li id="listMenu" class="menu-list" onclick="clickMenu()"><img src="img/list.svg" alt=""></li>
+                        <!-- <li id="listMenuOpen" class="menu-list-open"><img src="img/list-nested.svg" alt=""></li> -->
+                        <!-- <li id="xMenu" class="menu-x"><img src="img/x.svg" alt=""></li> -->
+                    </div>
+                    <div id="menu">
+                        <a href="" class="home"><li><img src="img/house-door.svg" alt="">&nbsp;Home</li></a>
+                        <a href="" class="html-projects"><li><img src="img/filetype-html.svg" alt="">&nbsp;HTML Projects</li></a>
+                        <a href="" class="js-projects"><li><img src="img/filetype-js.svg" alt="">&nbsp;JavaScript Projects</li></a>
+                        <a href="" class="py-projects"><li><img src="img/filetype-py.svg" alt="">&nbsp;Python Projects</li></a>
+                        <a href="" class="c-projects"><li><img src="img/icons8-c-programming.svg" alt="">&nbsp;C Projects</li></a>
+                        <a href="" class="about"><li><img src="img/person.svg" alt="">&nbsp;About</li></a>
+                    </div>
+                </ul>
+            </div>
+            <div class="baseboard">
+                <!-- <button type="button" data-toggle="dropdown"><img src="img/x.svg" alt=""></button> -->
+                <span>Designed by&nbsp;</span><a href="">Phelipe Bessa</a>
+            </div>
+        </div>
+        <div class="tips-projects">
+            <img src="img/code-typing-animate.svg" alt="">
+        </div>
+    </div>
+
+    <script>
+        function clickMenu(){
+            if(menu.style.display == 'block'){
+                leftMenu.style.height = '12vh'
+                menu.style.display = 'none'
+                menu.style.marginTop = '0'
+            }else{
+                leftMenu.style.height = '30vh'
+                menu.style.display = 'block'
+                menu.style.marginTop = '15vh'
+            }
+        }
+    </script>
+</body>
+</html>
